@@ -1,0 +1,191 @@
+RMSE scores
+    linear RMSE score: 
+    0.2385958699964229
+    
+    lasso RMSE score: 
+    0.2479083956329536
+    
+    ridge RMSE score: 
+    0.23858945542734167
+    
+    svr RMSE score: 
+    0.2892512687447429
+
+No preprocessing:
+    Simple Linear Regression Scores
+        train data R2 score: 0.8505291874824061
+        test data R2 score: 0.7812879610953483
+    
+    Lasso Linear Regression Scores:
+        train data R2 score: 0.8505291859997395
+        test data R2 score: 0.7812897763622968
+    
+    Ridge Linear Regression Scores:
+        train data R2 score: 0.8505291418008403
+        test data R2 score: 0.7812872899712993
+    
+    Support Vector Regression Scores:
+        train data R2 score: -0.10687948348787146
+        test data R2 score: -0.06395924797272334
+
+With standardazation alone:
+    Simple Linear Regression Scores
+        train data R2 score: 0.8505291874824061
+        test data R2 score: 0.7812879610953483
+
+    Lasso Linear Regression Scores:
+        train data R2 score: 0.833752189004878
+        test data R2 score: 0.7727515121226648
+
+    Ridge Linear Regression Scores:
+        train data R2 score: 0.8505281095730917
+        test data R2 score: 0.781293841094371
+
+    Support Vector Regression Scores:
+        train data R2 score: 0.9266170988877069
+        test data R2 score: 0.7348540243220951
+
+
+with normalization alone: (Terrible)
+    Simple Linear Regression Scores
+        train data R2 score: 0.8505291874824061
+        test data R2 score: 0.7812879610953488
+    
+    Lasso Linear Regression Scores:
+        train data R2 score: 0.0
+        test data R2 score: -0.0027407739351905658
+    
+    Ridge Linear Regression Scores:
+        train data R2 score: 0.7581140164689659
+        test data R2 score: 0.7223793242206786
+    
+    Support Vector Regression Scores:
+        train data R2 score: -2.304104174906958
+        test data R2 score: -2.1787345463979886
+
+
+Classification:
+No preprocessing:
+    Logistic regression mean accuracy score: 
+    0.7467532467532467
+    KNN classifier mean accuracy score: 
+    0.6688311688311688
+    Decision tree classifier mean accuracy score: 
+    0.6233766233766234
+    Random forest classifier mean accuracy score:
+    0.7597402597402597
+    Support vector machine classifier mean accuracy score:
+    0.7207792207792207
+
+Normalization:
+    Logistic regression mean accuracy score: 
+    0.6428571428571429
+    KNN classifier mean accuracy score: 
+    0.6883116883116883
+    Decision tree classifier mean accuracy score: 
+    0.6103896103896104
+    Random forest classifier mean accuracy score:
+    0.6493506493506493
+    Support vector machine classifier mean accuracy score:
+    0.6623376623376623
+
+standardazation:
+    Logistic regression mean accuracy score: 
+    0.7337662337662337
+    KNN classifier mean accuracy score: 
+    0.6818181818181818
+    Decision tree classifier mean accuracy score: 
+    0.6298701298701299
+    Random forest classifier mean accuracy score:
+    0.7402597402597403
+    Support vector machine classifier mean accuracy score:
+    0.6753246753246753
+    
+Both normilization and standardazation
+    Logistic regression mean accuracy score: 
+    0.7142857142857143
+    KNN classifier mean accuracy score: 
+    0.6493506493506493
+    Decision tree classifier mean accuracy score: 
+    0.7337662337662337
+    Random forest classifier mean accuracy score:
+    0.7662337662337663
+    Support vector machine classifier mean accuracy score:
+    0.6558441558441559
+
+Optimization:
+    ------------ Pre Parameter Optimization --------------
+    LR train score: 
+    0.7785016286644951
+    LR test score: 
+    0.7402597402597403
+    
+    KNN train score: 
+    0.7654723127035831
+    KNN test score: 
+    0.6688311688311688
+    
+    DT train score: 
+    1.0
+    DT test score: 
+    0.6233766233766234
+    
+    RNN train score:
+    1.0
+    RNN test score:
+    0.7402597402597403
+    
+    SVM train score:
+    0.755700325732899
+    SVM test score:
+    0.7207792207792207
+    ------------- Post Parameter Optimization -------------
+    LR new train score: 
+    0.7817589576547231
+    LR new test score: 
+    0.7402597402597403
+    
+    100.418410041841% train score change
+    100.0% test score change
+    
+    KNN new train score: 
+    0.758957654723127
+    KNN new test score: 
+    0.6818181818181818
+    
+    99.14893617021276% train score change
+    101.94174757281553% test score change
+    
+    DT new train score: 
+    0.757328990228013
+    DT new test score: 
+    0.7012987012987013
+    
+    75.7328990228013% train score change
+    112.5% test score change
+    
+    RF new train score:
+    0.9120521172638436
+    RF new test score:
+    0.7272727272727273
+    
+    91.20521172638436% train score change
+    98.24561403508771% test score change
+    
+    SVM new train score:
+    0.7687296416938111
+    SVM new test score:
+    0.7467532467532467
+    
+    101.72413793103448% train score change
+    103.60360360360362% test score change
+
+    **KNN & RF have been overfitted**
+
+    KNN validation score: 
+    0.7285714285714285
+    106.85714285714285 %score change with validation data
+    
+    RF validation score: 
+    0.7785714285714286
+    107.05357142857143 %score change with validation data
